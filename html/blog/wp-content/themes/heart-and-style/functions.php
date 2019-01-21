@@ -658,7 +658,7 @@ foreach ($posts as $postz){
 		 $arr1[$i]["image"]= $image;
 		 $content = $postz->post_content;
 	     $arr1[$i]["description"]= $content;
-	     $arr1[$i]["url"]= $postz->guid;
+	     $arr1[$i]["url"]= get_permalink($postz->ID);
 	
 	$i++;
 	}
