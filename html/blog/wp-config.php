@@ -87,7 +87,8 @@ if ( !defined('ABSPATH') )
 
 
 /** ftp credentials */
-define('FS_METHOD', 'ssh2');
+/** define('FS_METHOD', 'ssh2'); */
+define('FS_METHOD', 'direct');
 define('FTP_PUBKEY','/home/ubuntu/.ssh/id_rsa.pub');
 define('FTP_PRIKEY','/home/ubuntu/.ssh/id_rsa');
 define('FTP_USER','ubuntu');
