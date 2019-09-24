@@ -655,7 +655,12 @@ foreach ($posts as $postz){
 		 $arr1[$i]["post_date"]= $postz->post_date;
 		 $arr1[$i]["post_title"]= $postz->post_title;
 		 //$arr1[$i]["category_list"]= $catList;
-		 $arr1[$i]["image"]= $image;
+		 //$arr1[$i]["image"]= $image;
+		 if (false == $image) {
+			$arr1[$i]["image"] = '';
+		 } else {
+			$arr1[$i]["image"] = $image;
+		 }
 		 $content = $postz->post_content;
 	     $arr1[$i]["description"]= $content;
 	     $arr1[$i]["url"]= get_permalink($postz->ID);
